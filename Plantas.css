@@ -349,7 +349,7 @@ a {
 .vaso1:hover {
     border-bottom: 2px solid;
     transform: scale(1.1);
-    transition: transform 0, 5s ease-out;
+    transition: 0,3s ease-in-out;
 }
 
 .circular {
@@ -422,7 +422,7 @@ a {
 .vaso2:hover {
     border-bottom: 2px solid;
     transform: scale(1.1);
-    transition: transform 0, 5s ease-out;
+    transition: 0,3s ease-in-out;
 }
 
 .irrigavel {
@@ -495,7 +495,7 @@ a {
 .nani:hover {
     border-bottom: 2px solid;
     transform: scale(1.1);
-    transition: transform 0, 5s ease-out;
+    transition: 0,3s ease-in-out;
 }
 
 .vaso3 {
@@ -561,7 +561,7 @@ a {
 .item1:hover {
     border-bottom: 2px solid;
     transform: scale(1.1);
-    transition: transform 0, 5s ease-out;
+    transition: 0,3s ease-in-out;
 }
 
 .estante {
@@ -620,7 +620,7 @@ a {
 .item2:hover {
     border-bottom: 2px solid;
     transform: scale(1.1);
-    transition: transform 0, 5s ease-out;
+    transition: 0,3s ease-in-out;
 }
 
 .kitjardim {
@@ -679,7 +679,7 @@ a {
 .item3:hover {
     border-bottom: 2px solid;
     transform: scale(1.1);
-    transition: transform 0, 5s ease-out;
+    transition: 0,3s ease-in-out;
 }
 
 .suporteliso {
