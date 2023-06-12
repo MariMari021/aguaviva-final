@@ -241,8 +241,9 @@ button{
 }
 
 .preco {
-    font-family: 'antic';
-    font-weight: 100;
+    font-family: 'darker';
+    font-weight: 600;
+    font-size: 26px;
 }
 
 .planta-preco {

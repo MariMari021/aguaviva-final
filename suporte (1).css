@@ -1062,6 +1062,7 @@ margin-left: 226px;
 
 .parte-roxa {
     color: #6F01FF;
+    text-decoration: none;
 }
 
 .branca, .branco{
@@ -1516,6 +1517,29 @@ left: 186px;
     line-height: 23px;
     letter-spacing: 0.12em;
     color: #000000;
+}
+
+.app {
+    display: none;
+    position: absolute;
+    font-family: 'inter-semibold';
+    text-align: center;
+    width: 119px;
+    height: 17px;
+    left: 719px;
+    top: 2593px;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 0.12em;
+    color: #000000;
+}
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .face {

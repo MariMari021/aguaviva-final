@@ -10,7 +10,8 @@
 }
 
 .anuncio{
-    position: absolute;
+    position: fixed;
+    top: 486px;
     border: 0.1px solid #CAC4C4;
     width: 341px;
     height: 287px;
