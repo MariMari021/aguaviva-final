@@ -1,0 +1,153 @@
+
+.negrito{
+    margin-left: -36px;
+    font-family: 'darker-grotesque';
+    font-weight: 600;
+    color: #6565F8;
+    font-size: 31.43px;
+    margin-top: 18px;
+
+}
+
+.anuncio{
+    position: absolute;
+    border: 0.1px solid #CAC4C4;
+    width: 341px;
+    height: 287px;
+    background: #fff;
+    border-radius: 11.24px;
+   
+       margin-left: 202px;
+    margin-top: 102px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+ 
+    transition: transform 0.1s, top 0.4s;
+  
+    z-index: 999;
+}
+
+
+
+
+.he {display: flex;
+    margin-top: 24px;
+    border-radius: 8px;
+    margin-left: -8px;
+    width: 200px;
+    height: 207px;
+}
+
+
+.subtituloum{
+    position: relative;
+    left: 212px;
+    width: 136px;
+    top: -250px;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 30px 0 25px;
+    font-family: 'darker-grotesque';
+    color: #000000;
+}
+
+.linhapop{
+   
+    position: absolute;
+    width: 134px;
+    height: 0px;
+    left: 243px;
+    top: 146px;
+    border: 1px solid #000000;
+}
+
+.xis{
+    position: absolute;
+    width: 29px;
+    margin-left: 152px;
+    margin-top: -31px;
+}
+
+
+.subtitulodois{
+    position: absolute;
+    width: 109px;
+    height: 29px;
+    left: 257px;
+    top: 151px;
+    font-family: 'darker-grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    text-align: center;
+    color: #6565F8;
+
+}
+
+.consulte{
+    position: absolute;
+    width: 150px;
+    height: 56px;
+    left: 235px;
+    top: 186px;
+    font-family: 'darker-grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+}
+
+.confira{
+    width: 63px;
+height: 27px;
+left: 273px;
+top: 252px;
+
+font-family: 'darker-grotesque';
+font-style: normal;
+font-weight: 400;
+font-size: 23.6077px;
+line-height: 32px;
+color: #fff;
+text-align: center;
+}
+
+.azul{
+    position: absolute;
+width: 93px;
+height: 35.82px;
+left: 264px;
+top: 252px;
+
+background: #6565F8;
+border-radius: 5px;
+}
+
+
+
+
+
+
+@media screen and (max-width:400px) {
+    .anuncio{
+border: 0.1px solid #CAC4C4;
+    width: 331px;
+    height: 287px;
+    background: #fff;
+    border-radius: 11.24px;
+    margin-left: 200px;
+    margin-top: -30px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    position: fixed;
+    box-shadow: 0 5px 1305px #000;
+    transition: transform 0.1s, top 0.4s;
+    z-index: 999;}
+}

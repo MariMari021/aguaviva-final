@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantas - Água Viva</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="Plantas.css">
+    <link rel="shortcut icon" href="imagem/logo2.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="aguavivaum.html">  <img src="img-produfixo/logo.png" alt="logo da floricultura água viva."></a>
+        </div>
+        <nav>
+            <div class="main-nav">
+                <ul>
+                    <li><a href="aguavivaum.html">Lançamentos</a></li>
+                    <li><a href="Plantas.html">Plantas</a></li>
+                    <li><a href="Acessorios.html">Acessórios</a></li>
+                    <button type="submit" class="a" onclick="openPop()">
+                        <li>
+                            <p>
+                                Carrinho
+                            </p>
+                        </li>
+                        <!-- <li><a href="">Carrinho</a></li> -->
+                    </button>
+
+                    <button type="submit" class="a" onclick="openPopp()">
+                        <li>
+                            <p>
+                                Favoritos
+                            </p>
+                        </li>
+                    </button>
+                    <li><a class="cadastro" href="cadastro.html">Cadastre-se</a></li>
+                </ul>
+            </div>
+            </button>
+            <div class="menuicon">
+                <!-- icone -->
+                <ul class="menu-icones">
+                   <li> <a href=""><img class="menu-iconi" src="img-produfixo/vetor trevo.png" alt=""></a></li>
+    
+                   <button type="submit" class="m" onclick="openPop()">
+                   <li><img class="menu-icone" src="img-produfixo/vetor carrinho.png" alt=""></li>
+                   </button>
+    
+                   <button type="submit" class="m" onclick="openPopp()">
+                   <li ><img class="menu-iconesss" src="img-produfixo/vetor coracao preenchido.png" alt=""></li>
+                   </button>
+                  <li> <a href=""><img class="menu-iconess" src="img-produfixo/vetor perfil.png" alt=""></a></li>
+                </div>
+            </nav>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="pop" id="pop">
+            <img src="img-produfixo/logo.png" alt="">
+            <p>Para adicionar ao carrinho, cadastre-se ou entre em seu perfil.</p>
+            <button type="button" onclick="closePop()">OK</button>
+            <br>
+            <a class="tenho" href="login.html">Já tenho login</a>
+        </div>
+
+        <script>
+            let pop = document.getElementById("pop");
+
+            function openPop() {
+                pop.classList.add("open-pop");
+            }
+
+
+            function closePop() {
+                pop.classList.remove("open-pop");
+            }
+
+        </script>
+
+
+        <div class="popp" id="popp">
+            <img src="img-produfixo/logo.png" alt="">
+            <p>Para adicionar aos favoritos, cadastre-se ou entre em seu perfil.</p>
+
+            <button type="button" onclick="closePopp()">OK</button>
+            <br>
+            <a class="tenho" href="login.html">Já tenho login</a>
+        </div>
+
+        <script>
+            let popp = document.getElementById("popp");
+
+            function openPopp() {
+                popp.classList.add("open-popp");
+            }
+
+
+            function closePopp() {
+                popp.classList.remove("open-popp");
+            }
+
+        </script>
+
+        <hr class="gran">
+
+        <div class="cupom">
+            <a href="#">
+                <div class="vetor-seta-branca">
+                    <img src="imagem/vector seta branca.png" alt="seta" class="vetor seta branca">
+                </div>
+            </a>
+            <h1 class="off">
+                20% OFF em compras acima de R$ 79,99
+            </h1>
+            <!-- seta roxa -->
+            <a href="#">
+                <div class="vetor-seta-roxo">
+                    <img src="img-produfixo/seta.png" alt="seta" class="vetor seta roxo">
+                </div>
+            </a>
+        </div>
+
+        <div class="produtos">
+            <div class="visao"></div>
+            <h2 class="produto">
+                Conheça nossos produtos
+            </h2>
+            <div class="visao"></div>
+        </div>
+
+        <div class="todas-plantas">
+            <div class="plantas">
+                <div class="planta">
+                    <a href="tulipa.html">
+                        <img src="imagem/tulipa.png" alt="tulipa" class="imagem-flor">
+
+                        <div class="titulo-planta">
+                            <h1>
+                                Tulipa
+                            </h1>
+                    </a>
+                    <button  class="b" type="submit" onclick="openPopupp()">
+                    <div class="vetor">
+                        <img src="imagem/vector coracao.png" alt="vetor coração">
+                    </div>
+               </button> 
+               <div class="popupp" id="popupp">
+                <img id=overlay src="img-produfixo/logo.png" alt="" >
+                <p>Para adicionar aos favoritos, faça seu cadastro ou entre em seu perfil.</p>
+                <button type="button" onclick="closePopupp()"> OK</button>
+                <br>
+                <a class="tenho" href="login.html">Já tenho login</a>
+            </div>
+
+            <script>
+                let popupp = document.getElementById("popupp");
+
+                function openPopupp() {
+                    popupp.classList.add("open-popupp");
+                }
+
+
+                function closePopupp() {
+                    popupp.classList.remove("open-popupp");
+                }
+
+
+            </script>
+
+
+            </div>
+
+
+                <div class="planta-preco">
+                    <h3 class="preco">
+                        R$ 50,00
+                    </h3>
+                </div>
+            </div>
+
+            <div class="planta">
+                <a href="cacto.html">
+                    <img src="imagem/cacto.png" alt="cacto" class="imagem-flor">
+                    <div class="titulo-planta">
+                        <h1>
+                            Cacto
+                        </h1>
+                </a>
+                <button  class="b" type="submit" onclick="openPopupp()">
+                <div class="vetor">
+                    <img src="imagem/vector coracao.png" alt="vetor coração">
+                </div>
+            </button>
+            
+            </div>
+            <div class="planta-preco">
+                <h3 class="preco">
+                    R$ 20,00
+                </h3>
+            </div>
+        </div>
+
+        <div class="planta">
+            <a href="babosa.html">
+                <img src="imagem/babosa.png" alt="babosa" class="imagem-flor">
+                <div class="titulo-planta">
+                    <h1>
+                        Babosa
+                    </h1>
+            </a>
+
+            <button  class="b" type="submit" onclick="openPopupp()">
+            <div class="vetor">
+                <img src="imagem/vector coracao.png" alt="vetor coração">
+            </div>
+        </button>
+        </div>
+        <div class="planta-preco">
+            <h3 class="preco">
+                R$ 30,00
+            </h3>
+        </div>
+        </div>
+        </div>
+
+        <div class="plantas-coluna">
+            <div class="planta">
+                <a href="camomila.html">
+                    <img src="imagem/camomila.png" alt="camomila" class="imagem-flor">
+                    <div class="titulo-planta">
+                        <h1>
+                            Camomila
+                        </h1>
+                </a>
+
+                <button  class="b" type="submit" onclick="openmodal()">
+                <div class="vetor">
+                    <img src="imagem/vector coracao.png" alt="vetor coração">
+                </div>
+            </button>
+            <div class="modal" id="modal">
+                <img id=overlay src="img-produfixo/logo.png" alt="" >
+                <p>Para adicionar aos favoritos, faça seu cadastro ou entre em seu perfil.</p>
+                <button type="button" onclick="closemodal()">OK</button>
+                <br>
+                <a class="tenho" href="login.html">Já tenho login</a>
+            </div>
+
+            </div>
+
+            <script>
+                let modal = document.getElementById("modal");
+
+                function openmodal() {
+                    modal.classList.add("open-modal");
+                }
+
+
+                function closemodal() {
+                    modal.classList.remove("open-modal");
+                }
+
+
+            </script>
+
+            <div class="planta-preco">
+                <h3 class="preco">
+                    R$ 15,00
+                </h3>
+            </div>
+        </div>
+
+        <div class="planta">
+            <a href="margarida.html">
+                <img src="imagem/Margarida.png" alt="margarida" class="imagem-flor">
+                <div class="titulo-planta">
+                    <h1>
+                        Margarida
+                    </h1>
+            </a>
+            <button  class="b" type="submit" onclick="openmodal()">
+            <div class="vetor">
+                <img src="imagem/vector coracao.png" alt="vetor coração">
+            </div>
+        </button>
+        </div>
+        <div class="planta-preco">
+            <h3 class="preco">
+                R$ 35,00
+            </h3>
+        </div>
+        </div>
+
+        <div class="planta">
+            <a href="girassol.html">
+                <img src="imagem/Girassol.png" alt="girassol" class="imagem-flor">
+                <div class="titulo-planta">
+                    <h1>
+                        Girassol
+                    </h1>
+            </a>
+            <button  class="b" type="submit" onclick="openmodal()">
+            <div class="vetor">
+                <img src="imagem/vector coracao.png" alt="vetor coração">
+            </div>
+        </button>
+
+        </div>
+        <div class="planta-preco">
+            <h3 class="preco">
+                R$ 15,00
+            </h3>
+        </div>
+        </div>
+        </div>
+
+        <div class="plantas-colunas">
+            <div class="planta">
+                <a href="begonia.html">
+                    <img src="imagem/bergonia.png" alt="begônia" class="imagem-flor">
+                    <div class="titulo-planta">
+                        <h1>
+                            Begônia
+                        </h1>
+                </a>
+                <button  class="b" type="submit" onclick="openover()">
+                <div class="vetor">
+                    <img src="imagem/vector coracao.png" alt="vetor coração">
+                </div>
+            </button>
+
+            <div class="over" id="over">
+                <img id=overlay src="img-produfixo/logo.png" alt="" >
+                <p>Para adicionar aos favoritos, faça seu cadastro ou entre em seu perfil.</p>
+                <button type="button" onclick="closeover()">OK</button>
+                <br>
+                <a class="tenho" href="login.html">Já tenho login</a>
+            </div>
+
+            <script>
+                let over = document.getElementById("over");
+
+                function openover() {
+                    over.classList.add("open-over");
+                }
+
+
+                function closeover() {
+                    over.classList.remove("open-over");
+                }
+
+
+            </script>
+
+
+
+            </div>
+            <div class="planta-preco">
+                <h3 class="preco">
+                    R$ 50,00
+                </h3>
+            </div>
+        </div>
+
+        <div class="planta">
+            <a href="pleomele.html">
+                <img src="imagem/Pleomele.png" alt="Pleomele" class="imagem-flor">
+                <div class="titulo-planta">
+                    <h1>
+                        Pleomele
+                    </h1>
+            </a>
+            <button  class="b" type="submit" onclick="openover()">
+            <div class="vetor">
+                <img src="imagem/vector coracao.png" alt="vetor coração">
+            </div>
+        </button>
+        </div>
+        <div class="planta-preco">
+            <h3 class="preco">
+                R$ 45,00
+            </h3>
+        </div>
+        </div>
+
+        <div class="planta">
+            <a href="paudaagua.html">
+                <img src="imagem/Pau D’água.png" alt="pau d'água" class="imagem-flor">
+                <div class="titulo-planta">
+                    <h1>
+                        Pau D’água
+                    </h1>
+            </a>
+            <button  class="b" type="submit" onclick="openover()">
+            <div class="vetor">
+                <img src="imagem/vector coracao.png" alt="vetor coração">
+            </div>
+        </button>
+        </div>
+        <div class="planta-preco">
+            <h3 class="preco">
+                R$ 49,90
+            </h3>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+        <br>
+
+        <div class="linha">
+            <hr class="gran">
+        </div>
+
+        <p class="recomendacao">Recomendações</p>
+        <section class="tudo-recomendacao">
+            <a href="vasocircular.html">
+                <article>
+                    <img class="vaso1" src="imagem/vaso circular.png" alt="vaso circular">
+                    <p class="circular">Vaso circular </p>
+                    <p class="preco1">R$ 62,42</p>
+                    <p class="encomenda1">Sob encomenda</p>
+                </article>
+            </a>
+
+            <a href="vasoirrigavel.html">
+                <article>
+                    <img class="vaso2" src="imagem/vaso irrigavel.png" alt="vaso irregavel">
+                    <p class="irrigavel">Vaso irrigável</p>
+                    <p class="preco2">R$XXX,XX</p>
+                    <p class="encomenda2">Sob encomenda</p>
+                </article>
+            </a>
+
+            <a href="vasonani.html">
+                <article>
+                    <img class="nani" src="imagem/vaso nani.png" alt="vaso nani">
+                    <p class="vaso3">Vaso nani</p>
+                    <p class="preco3">R$XXX,XX</p>
+                    <p class="encomenda3">Sob encomenda</p>
+                </article>
+            </a>
+        </section>
+
+        <!-- segunda parte da recomendação -->
+
+        <section class="tudo-recomendacao2">
+            <a href="estante.html">
+                <article>
+                    <img class="item1" src="imagem/estante.png" alt="">
+                    <p class="estante">Estante</p>
+                    <p class="preco4">R$XXX.XX</p>
+                    <p class="encomenda4">Sob encomenda</p>
+                </article>
+            </a>
+
+            <a href="kitjardim.html">
+                <article>
+                    <img class="item2" src="imagem/kit jardim.png" alt="">
+                    <p class="kitjardim">Kit jardim</p>
+                    <p class="preco5">R$XXX,XX</p>
+                    <p class="encomenda5">Sob encomenda</p>
+                </article>
+            </a>
+
+            <a href="suporteliso.html">
+                <article>
+                    <img class="item3" src="imagem/suporte liso.png" alt="">
+                    <p class="suporteliso">Suporte liso</p>
+                    <p class="preco6">R$XXX,XX</p>
+                    <p class="encomenda6">Sob encomenda</p>
+                </article>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <img src="imagem/flor roxa contrario.png" alt="flor roxa" class="florroxinha">
+        <img src="imagem/localizacao.png" alt="pin" class="local">
+        <div class="roxao">
+           
+            <div class="empurrar">
+                <a class="Plantas" href="Plantas.html">Plantas</a>
+                <div class="linhaum"></div>
+                <a class="Acessorios" href="Acessorios.html">Acessórios</a>
+                <div class="linhadois"></div>
+                <a class="Lancamentos" href="aguavivaum.html">Lançamentos</a>
+                <div class="linhatres"></div>
+                
+                <div class="linhaquatro"></div>
+                <a class="Favoritos" href="#">Favoritos</a>
+                <div class="linhacinco"></div>
+                <a class="Carrinho" href="#">Carrinho</a>
+                
+            </div>
+            <a class="Login" href="login.html">Login</a>
+            <div class="linhaseis"></div>
+            <a class="Suporte" href="suporte (1).html">Suporte</a>
+            <div class="linhasete"></div>
+            <a class="Sobre" href="sobreNos.html">Sobre nós</a>
+        </div>
+        <p class="appp">Siga-nos!</p>
+        <p class="app">Siga-nos</p>
+        <a class="Login" href="#">Login</a>
+        <div class="linhaseis"></div>
+        <a href="https://pt-br.facebook.com/people/%C3%81gua-Viva-Flores-e-Decora%C3%A7%C3%B5es/100057605292210/"><img
+                class="face" src="imagem/facebook.png" alt="facebook"></a>
+        <img class="insta" src="imagem/instagram.png" alt="instagram">
+
+        <p class="endereco">Endereço:Rua Santos Dumont, Avenida Santos Dumont, 680, Ferraz de Vasconcelos - SP,
+            08530-000</p>
+
+            <div class="branca"></div>
+            <div class="branco"></div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós - Água Viva</title>
+    
+    <link rel="stylesheet" href="sobreNos.css">
+    <link rel="shortcut icon" href="img-produfixo/logo-icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- cabeçalho -->
+    <header>
+        <div class="logo">
+            <a href="aguavivaum.html"><img src="img-produfixo/logo.png" alt="logo da floricultura água viva."></a>
+        </div>
+        <nav>
+            <div class="main-nav">
+                <ul>
+                    <li><a href="aguavivaum.html">Lançamentos</a></li>
+                    <li><a href="Plantas.html">Plantas</a></li>
+                    <li><a href="Acessorios.html">Acessórios</a></li>
+                    <button type="submit" class="a" onclick="openPop()">
+                        <li>
+                            <p>
+                                Carrinho
+                            </p>
+                        </li>
+                        <!-- <li><a href="">Carrinho</a></li> -->
+                    </button>
+
+                    <button type="submit" class="a" onclick="openPopp()">
+                        <li>
+                            <p>
+                                Favoritos
+                            </p>
+                        </li>
+                    </button>
+                    <li><a class="cadastro" href="cadastro.html">Cadastre-se</a></li>
+                </ul>
+            </div>
+        
+        </button>
+<div class="menuicon">
+            <!-- icone -->
+            <ul class="menu-icones">
+               <li> <a href=""><img class="menu-iconi" src="img-produfixo/vetor trevo.png" alt=""></a></li>
+
+               <button type="submit" class="m" onclick="openPop()">
+               <li><img class="menu-icone" src="img-produfixo/vetor carrinho.png" alt=""></li>
+               </button>
+
+               <button type="submit" class="m" onclick="openPopp()">
+               <li ><img class="menu-iconesss" src="img-produfixo/vetor coracao preenchido.png" alt=""></li>
+               </button>
+              <li> <a href=""><img class="menu-iconess" src="img-produfixo/vetor perfil.png" alt=""></a></li>
+            </div>
+        </nav>
+
+
+    </header>
+    <!-- fim cabeçalho -->
+
+    <!-- main -->
+    <main>
+        <div class="pop" id="pop">
+            <img src="img-produfixo/logo.png" alt="">
+            <p>Para adicionar ao carrinho, cadastre-se ou entre em seu perfil.</p>
+            <button type="button" onclick="closePop()">OK</button>
+            <br><br>
+            <a class="tenho" href="login.html">Já tenho login</a>
+        </div>
+
+        <script>
+            let pop = document.getElementById("pop");
+
+            function openPop() {
+                pop.classList.add("open-pop");
+            }
+
+
+            function closePop() {
+                pop.classList.remove("open-pop");
+            }
+
+        </script>
+
+
+        <div class="popp" id="popp">
+            <img src="img-produfixo/logo.png" alt="">
+            <p>Para adicionar aos favoritos, cadastre-se ou entre em seu perfil.</p>
+
+            <button type="button" onclick="closePopp()">OK</button>
+            <br><br>
+            <a class="tenho" href="login.html">Já tenho login</a>
+        </div>
+
+        <script>
+            let popp = document.getElementById("popp");
+
+            function openPopp() {
+                popp.classList.add("open-popp");
+            }
+
+
+            function closePopp() {
+                popp.classList.remove("open-popp");
+            }
+
+        </script>
+
+        <!-- linha -->
+        <hr class="gran">
+        <!-- fiim linha -->
+
+
+        <!-- extremidade -->
+        <div class="extremidade">
+            <img src="imagem/flor draw right.png" alt="desenho de flor - decoração" class="flor-direita">
+            <img src="imagem/flor draw right.png" alt="desenho de flor - decoração" class="flor-esquerda">
+        </div>
+        <!-- fim extremidade -->
+
+        <!-- seta -->
+        <a href="#">
+            <div class="seta">
+                <img src="imagem/vetor seta.png" alt="seta" class="vetor-seta">
+            </div>
+        </a>
+        <!-- fim seta -->
+
+        <!-- about-me -->
+        <div class="about-me">
+            <div class="aboutme-texto">
+                <h1 class="titulo-aboutme">
+                    Há 26 anos colorindo sua vida!
+                </h1>
+                <p class="text-aboutme">
+                    Bem-vindo à nossa floricultura familiar! Com mais de 26 anos de tradição, somos apaixonados por flores. Oferecemos uma variedade encantadora de plantas e flores frescas, além de conselhos personalizados. Nosso objetivo é trazer beleza e inspiração para sua vida. Venha nos visitar e faça parte da nossa comunidade de amantes da natureza.
+                </p>
+                <p class="text-aboutme-mobile">
+                    Conheça nossa floricultura familiar com mais de 26 anos, oferecemos plantas e flores frescas, conselhos personalizados e inspiração para amantes da natureza.
+                </p>
+            </div>
+            <div class="aboutme-foto">
+                <img src="imagem/flores sobre nos.png" alt="flores" class="foto-aboutme">
+            </div>
+        </div>
+        <!-- fim about me -->
+
+        <!-- visao -->
+        <div class="visao">
+            <h1 class="titulo-visao">
+                Visão dos usuários
+            </h1>
+        </div>
+        <!-- fim visao -->
+
+        <!-- usuarios -->
+        <div class="tudo-usuario">
+            <div class="usuario">
+                <div class="foto-usuario">
+                    <img src="imagem/talita.png" alt="foto de mulher" class="usuario-foto">
+                </div>
+                <div class="nome-usuario">
+                    Talita Jardim
+                </div>
+                <div class="avaliacao-estrela">
+                    <img src="imagem/estrela.png" alt="estrela" class="estrela">
+                </div>
+                <div class="avaliacao">
+                    <h4 class="tempo">
+                        1 semana atrás
+                    </h4>
+                    <p class="texto-avaliacao">
+                        Flores maravilhosas e um ótimo preço. O atendimento é excelente, são super atenciosos. Entrega
+                        rápida. Estão de parabéns, é a melhor floricultura da região. Recomendo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="usuario">
+                <div class="foto-usuario">
+                    <img src="imagem/fabiana.png" alt="foto de mulher" class="usuario-foto">
+                </div>
+                <div class="nome-usuario">
+                    Fabiana Teixeira
+                </div>
+                <div class="avaliacao-estrela">
+                    <img src="imagem/estrela.png" alt="estrela" class="estrela">
+                </div>
+                <div class="avaliacao">
+                    <h4 class="tempo">
+                        11 meses atrás
+                    </h4>
+                    <p class="texto-avaliacao">
+                        Atendentes super atenciosos e dispostos a te atender! Ótima floricultura, com variedade de
+                        flores e várias opções de presentes. Recomendo muitoo!
+                    </p>
+                </div>
+            </div>
+
+            <div class="usuario">
+                <div class="foto-usuario">
+                    <img src="imagem/hector.png" alt="foto de homem" class="usuario-foto-hector">
+                </div>
+                <div class="nome-usuario">
+                    Hector Silva
+                </div>
+                <div class="avaliacao-estrela">
+                    <img src="imagem/estrela.png" alt="estrela" class="estrela">
+                </div>
+                <div class="avaliacao">
+                    <h4 class="tempo">
+                        4 anos atrás
+                    </h4>
+                    <p class="texto-avaliacao">
+                        Muito atenciosos e fazem as melhores combinações dias das mães, namorados e aniversário se
+                        quiser dar flores em alguma ocasião especial recomendo.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- fim usuarios -->
+
+        <!-- frase -->
+        <div class="frase">
+            <h4 class="frase-desktop">
+                Obtenha as <div class="color">melhores flores,</div> sempre cultivadas com <div class="color">paixão,
+                    inovação e foco, valorizando as pessoas.</div>
+            </h4>
+            <h4 class="frase-mobile">
+                <div class="frase1">Obtenha as <div class="color">melhores flores,</div> sempre cultivadas</div>  
+                <div class="frase2">com <div class="color">paixão,
+                    inovação e foco, valorizando</div></div>
+                    <div class="frase3">as pessoas.</div>
+                
+            </h4>
+        </div>
+        <!-- fim frase -->
+
+        <!-- conheça -->
+        <div class="conheca">
+            <h1 class="titulo-conheca">
+                Conheça nossa loja
+            </h1>
+        </div>
+        <!-- fim conheça -->
+
+        <!-- localização -->
+        <div class="descricao">
+            <div class="local">
+                <p>Nos encontre na: </p> <div class="color-azul">R. Santos Dumont, 680 - Avenida Santos Dumont, Ferraz de
+                    Vasconcelos - SP.</div>
+                <hr class="linha" width="531px">
+                <p>Entre em contato conosco:</p> 
+                <div class="alinhamento">
+                    <div class="color-azul-titulo">Telefone:</div> <p>+55 11 4675-5614</p> 
+                </div>
+                <div class="alinhamento">
+                    <div class="color-azul-titulo">Email:</div> <p class="p">aguavivafloress@gmail.com</p> 
+                </div>
+                <br>
+                <div class="color-azul-horario">Horário de funcionamento: </div>
+                <div class="lista">
+                    <ul>
+                        <li>Segunda a sábado das 08:30-20:00</li>
+                        <li>Domingo das 08:30-12:45</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mapa">
+                <a href="https://www.google.com/maps/dir//%C3%A1gua+viva+flores/@-23.5447727,-46.3904561,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94ce652c2e2d4955:0xb3a7ffb11e973e4b!2m2!1d-46.3666852!2d-23.5379867?entry=ttu">
+                    <div class="mapa-foto">
+                        <img src="imagem/mapa.png" alt="mapa" class="foto-mapa">
+                    </div>
+                </a>
+                <div class="quadrado"></div>
+            </div>
+        </div>
+        <!-- fim localização -->
+    </main>
+    <!-- fim main -->
+
+    <!-- rodapé -->
+    <footer>
+        <img src="imagem/flor roxa contrario.png" alt="flor roxa" class="florroxinha">
+        <img src="imagem/localizacao.png" alt="pin" class="pin">
+        <div class="roxao">
+           
+            <div class="empurrar">
+                <a class="Plantas" href="Plantas.html">Plantas</a>
+                <div class="linhaum"></div>
+                <a class="Acessorios" href="Acessorios.html">Acessórios</a>
+                <div class="linhadois"></div>
+                <a class="Lancamentos" href="aguavivaum.html">Lançamentos</a>
+                <div class="linhatres"></div>
+                
+                <div class="linhaquatro"></div>
+                <a class="Favoritos" href="#">Favoritos</a>
+                <div class="linhacinco"></div>
+                <a class="Carrinho" href="#">Carrinho</a>
+                
+            </div>
+            <a class="Login" href="login.html">Login</a>
+            <div class="linhaseis"></div>
+            <a class="Suporte" href="suporte (1).html">Suporte</a>
+            <div class="linhasete"></div>
+            <a class="Sobre" href="sobreNos.html">Sobre nós</a>
+
+        <p class="app">Siga-nos</p>
+        <p class="appp">Siga-nos!</p>
+        <a class="Login" href="#">Login</a>
+        <div class="linhaseis"></div>
+        <a href="https://pt-br.facebook.com/people/%C3%81gua-Viva-Flores-e-Decora%C3%A7%C3%B5es/100057605292210/"><img
+                class="face" src="imagem/facebook.png" alt="facebook"></a>
+        <img class="insta" src="imagem/instagram.png" alt="instagram">
+
+        <p class="endereco">Endereço:Rua Santos Dumont, Avenida Santos Dumont, 680, Ferraz de Vasconcelos - SP,
+            08530-000</p>
+
+            <div class="branca"></div>
+            <div class="branco"></div>
+    </footer>
+    <!-- fim rodapé -->
+</body>
+
+</html>

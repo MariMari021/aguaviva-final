@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pleomele - Água Viva</title>
+<link rel="stylesheet" href="tenhologin.css">
+    <link rel="stylesheet" href="produtooito.css">
+    <link rel="shortcut icon" href="img-produfixo/logo-icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="aguavivaum.html"> <img src="img-produfixo/logo.png" alt="logo da floricultura água viva."></a>
+        </div>
+        <nav>
+            <div class="main-nav">
+                <ul>
+                    <li><a href="aguavivaum.html">Lançamentos</a></li>
+                    <li><a href="Plantas.html">Plantas</a></li>
+                    <li><a href="Acessorios.html">Acessórios</a></li>
+                    <button type="submit" class="a" onclick="openPop()">
+                        <li>
+                            <p>
+                                Carrinho
+                            </p>
+                        </li>
+                        <!-- <li><a href="">Carrinho</a></li> -->
+                    </button>
+
+                    <button type="submit" class="a" onclick="openPopp()">
+                        <li>
+                            <p>
+                                Favoritos
+                            </p>
+                        </li>
+                    </button>
+                    <li><a class="cadastro" href="cadastro.html">Cadastre-se</a></li>
+                </ul>
+            </div>
+        
+        </button>
+<div class="menuicon">
+            <!-- icone -->
+            <ul class="menu-icones">
+               <li> <a href=""><img class="menu-iconi" src="img-produfixo/vetor trevo.png" alt=""></a></li>
+
+               <button type="submit" class="aviso" onclick="openPop()">
+               <li><img class="menu-icone" src="img-produfixo/vetor carrinho.png" alt=""></li>
+               </button>
+
+               <button type="submit" class="aviso" onclick="openPopp()">
+               <li><img class="menu-iconesss" src="img-produfixo/vetor coracao preenchido.png" alt=""></li>
+               </button>
+
+              <li> <a href=""><img class="menu-iconess" src="img-produfixo/vetor perfil.png" alt=""></a></li>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main>
+
+        <div class="pop" id="pop">
+            <img src="img-produfixo/logo.png" alt="">
+            <p>Para adicionar ao carrinho, cadastre-se ou entre em seu perfil.</p>
+            <button type="button" onclick="closePop()">OK</button>
+            <br><br>
+                <a class="tenhoum" href="login.html">Já tenho login</a>
+        </div>
+
+        <script>
+            let pop = document.getElementById("pop");
+
+            function openPop() {
+                pop.classList.add("open-pop");
+            }
+
+
+            function closePop() {
+                pop.classList.remove("open-pop");
+            }
+
+        </script>
+
+
+        <div class="popp" id="popp">
+            <img src="img-produfixo/logo.png" alt="">
+            <p>Para adicionar aos favoritos, cadastre-se ou entre em seu perfil.</p>
+
+            <button type="button" onclick="closePopp()">OK</button>
+            <br><br>
+            <a class="tenhoum" href="login.html">Já tenho login</a>
+        </div>
+
+        <script>
+            let popp = document.getElementById("popp");
+
+            function openPopp() {
+                popp.classList.add("open-popp");
+            }
+
+
+            function closePopp() {
+                popp.classList.remove("open-popp");
+            }
+
+        </script>
+
+
+        <div class="gran"></div>
+
+        <div class="seta-lancamentos">
+        <a href="Plantas.html"><img class="seta" src="img-produfixo/seta.png" alt=""></a>
+
+            <h3 class="titulo">Plantas</h3>
+</div>
+        <div class="center">
+            <img class="arr" src="img-pleomele/image 63 (1).png" onmouseover="this.src='img-pleomele/image 1.jpeg'"
+                onmouseout="this.src='img-pleomele/image 63 (1).png'">
+
+
+
+
+            <div id="subir">
+                <div class="infos">
+                <p class="t">Pleomele</p>
+                <button type="submit" onclick="openPopupp()" class="m">
+                    <img class="he" src="img-produfixo/Vector.png" alt="">
+                </button>
+                <p class="x">R$ 45,00</p>
+                <p class="enco">Sob encomenda</p>
+                <p class="ri">Sua presença oferece extrema elegância, além de ser uma ótima solução para purificar o ar dos cômodos.
+                </p>
+
+           </div>
+                <div class="popupp" id="popupp">
+                    <img src="img-produfixo/logo.png" alt="">
+                    <p>Para adicionar aos favoritos, faça seu cadastro ou entre em seu perfil.</p>
+                    <button type="button" onclick="closePopupp()"> OK</button>
+                    <a class="tenho" href="login.html">Já tenho login</a>
+                </div>
+
+                <script>
+                    let popupp = document.getElementById("popupp");
+
+                    function openPopupp() {
+                        popupp.classList.add("open-popupp");
+                    }
+
+
+                    function closePopupp() {
+                        popupp.classList.remove("open-popupp");
+                    }
+
+
+                </script>
+
+
+
+                <button type="submit" class="rox" onclick="openPopup()">
+                    <div>
+                        <p class="tra"> Adicionar ao carrinho</p>
+                    </div>
+            </div></button>
+
+            <div class="popup" id="popup">
+                <img src="img-produfixo/logo.png" alt="">
+                <p>Para adicionar ao carrinho, cadastre-se ou entre em seu perfil.</p>
+                <button type="button" onclick="closePopup()"> OK</button>
+                <a class="tenho" href="login.html">Já tenho login</a>
+            </div>
+
+            <script>
+                let popup = document.getElementById("popup");
+
+                function openPopup() {
+                    popup.classList.add("open-popup");
+                }
+
+
+                function closePopup() {
+                    popup.classList.remove("open-popup");
+                }
+
+
+            </script>
+
+
+
+
+
+        </div>
+
+        <div class="fim"></div>
+
+        <p class="recom">Recomendações</p>
+        <section class="cima">
+           <a href="girassol.html"><article class="recomedacaoum">
+                <img class="sing" src="img-pleomele/image 60.png" alt="">
+                <p class="r">Girassol</p>
+                <p class="din">R$ 15,00</p>
+                <p class="menda">Sob encomenda</p>
+            </article></a> 
+
+
+
+            <a href="tulipa.html"><article class="recomedacaoum">
+                <img class="adao" src="img-pleomele/Group 19.png" alt="">
+                <p class="c">Tulipa</p>
+                <p class="eiro">R$ 50,00</p>
+                <p class="titudois">Sob encomenda</p>
+            </article></a>
+
+            <a href="cacto.html"><article class="recomedacaoum">
+                <img class="boia" src="img-pleomele/b02cf335aa50af1258c9c8f4ba9f8abf 1.png" alt="">
+                <p class="j">Cacto</p>
+                <p class="money">R$ 20,00</p>
+                <p class="subtitu">Sob encomenda</p>
+            </article></a>
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <div class="branca"></div>
+        <div class="branco"></div>
+        <img class="florroxinha" src="img-produfixo/flor roxa contrario.png" alt="">
+        <img class="local" src="img-produfixo/localizacao.png" alt="">
+        <div class="roxao">
+    
+         
+            <div class="empurrar">
+                <a class="Plantas" href="Plantas.html">Plantas</a>
+                <div class="linhaum"></div>
+                <a class="Acessorios" href="Acessorios.html">Acessórios</a>
+                <div class="linhadois"></div>
+                <a class="Lancamentos" href="aguavivaum.html">Lançamentos</a>
+                <div class="linhatres"></div>
+                
+                <div class="linhaquatro"></div>
+                <a class="Favoritos" href="#">Favoritos</a>
+                <div class="linhacinco"></div>
+                <a class="Carrinho" href="#">Carrinho</a>
+                
+            </div>
+            <a class="Login" href="login.html">Login</a>
+            <div class="linhaseis"></div>
+            <a class="Suporte" href="suporte (1).html">Suporte</a>
+            <div class="linhasete"></div>
+            <a class="Sobre" href="sobreNos.html">Sobre nós</a>
+        </div>
+    
+        <p class="app">Siga-nos</p>
+        <p class="appp">Siga-nos!</p>
+        <a href="https://pt-br.facebook.com/people/%C3%81gua-Viva-Flores-e-Decora%C3%A7%C3%B5es/100057605292210/"><img
+                src="img-produfixo/image 33.png" alt="icone facebook" class="face"></a>
+        <a href="https://instagram.com/aguavivafloress">
+            <img class="insta" src="img-produfixo/image 34.png" alt="icone instagram">
+        </a>
+    
+        <p class="endereco">Endereço:Rua Santos Dumont, Avenida Santos Dumont, 680, Ferraz de Vasconcelos - SP,
+            08530-000</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floricultura Água Viva</title>
+    <link rel="stylesheet" href="aguaviva.css">
+<link rel="stylesheet" href="endereco.css">
+    <link rel="shortcut icon" href="image/logo-icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="aguavivaum.html"><img src="image/logo.png" alt="logo da floricultura água viva."></a>
+        </div>
+        <nav>
+            <div class="main-nav">
+                <ul>
+                    <li><a href="#lancamentos">Lançamentos</a></li>
+                    <li><a href="Plantas.html">Plantas</a></li>
+                    <li><a href="Acessorios.html">Acessórios</a></li>
+                    <button type="submit" class="a" onclick="openPop()">
+                        <li>
+                            <p>
+                                Carrinho
+                            </p>
+                        </li>
+                        <!-- <li><a href="">Carrinho</a></li> -->
+                    </button>
+
+                    <button type="submit" class="a" onclick="openPopp()">
+                        <li>
+                            <p>
+                                Favoritos
+                            </p>
+                        </li>
+                    </button>
+                    <li><a class="cadastro" href="cadastro.html">Cadastre-se</a></li>
+                </ul>
+            </div>
+        </button>
+        <div class="menuicon">
+            <!-- icone -->
+            <ul class="menu-icones">
+               <li> <a href=""><img class="menu-iconi" src="img-produfixo/vetor trevo.png" alt=""></a></li>
+
+               <button type="submit" class="m" onclick="openPop()">
+               <li><img class="menu-icone" src="img-produfixo/vetor carrinho.png" alt=""></li>
+               </button>
+
+               <button type="submit" class="m" onclick="openPopp()">
+               <li ><img class="menu-iconesss" src="img-produfixo/vetor coracao preenchido.png" alt=""></li>
+               </button>
+              <li> <a href=""><img class="menu-iconess" src="img-produfixo/vetor perfil.png" alt=""></a></li>
+            </div>
+        </nav>
+
+
+        
+    </header>
+    <main>
+        <div class="pop" id="pop">
+            <img src="image/logo.png" alt="">
+            <p>Para adicionar ao carrinho, cadastre-se ou entre em seu perfil.</p>
+            <button type="button" onclick="closePop()">OK</button>
+            <br><br>
+                <a class="tenho" href="login.html">Já tenho login</a>
+        </div>
+
+        <script>
+            let pop = document.getElementById("pop");
+
+            function openPop() {
+                pop.classList.add("open-pop");
+            }
+
+
+            function closePop() {
+                pop.classList.remove("open-pop");
+            }
+
+        </script>
+
+
+        <div class="popp" id="popp">
+            <img src="image/logo.png" alt="">
+            <p>Para adicionar aos favoritos, cadastre-se ou entre em seu perfil.</p>
+
+            <button type="button" onclick="closePopp()">OK</button>
+            <br><br>
+            <a class="tenho" href="login.html">Já tenho login</a>
+        </div>
+
+        <script>
+            let popp = document.getElementById("popp");
+
+            function openPopp() {
+                popp.classList.add("open-popp");
+            }
+
+
+            function closePopp() {
+                popp.classList.remove("open-popp");
+            }
+
+        </script>
+
+
+
+        <div class="slider">
+
+            <div class="slides">
+
+                <!-- radio buttons -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- end radio buttons -->
+
+                <!-- slide images -->
+                <div class="slide-first">
+                    <img class="imagem" src="image/banner1.png" alt="Banner promocional de 50% de desconto.">
+                </div>
+                <div class="slide">
+                    <img class="imagem" src="image/banner2.png" alt="Banner de suportes de flores.">
+                </div>
+                <div class="slide">
+                    <img class="imagem" src="image/banner3.png" alt="Banner com ofertas de lançamento.">
+                </div>
+                <div class="slide">
+                    <img class="imagem" src="image/banner4.png" alt="Banner com ofertas de arranjos.">
+                </div>
+                <!-- end slide images -->
+
+                <!-- navigation auto -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <!-- manual navigation -->
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!-- end manual navigation -->
+            </div>
+        </div>
+
+        <div id="slider-mobile">
+            <figure>
+                <img src="image/um.png">
+                <img src="image/dois.png">
+                <img src="image/tres.png">
+                <img src="image/quatro.png">
+                <img src="image/um.png">
+            </figure>
+        </div>
+
+
+
+
+        <div class="vendidos">
+
+            <div>
+                <br>
+                <h1 class="title1">
+                    Mais vendidas
+                </h1>
+            </div>
+
+            <div class="planta-vendidos">
+                <div class="circuloFlor">
+                    <div class="imgFlor-1">
+                        <a href="produtoum.html"><img src="image/imgFlor1.png" onmouseover="this.src='image/segimage.png'"
+                                onmouseout="this.src='image/imgFlor1.png'" width="245px" class="plan"></a>
+                    </div>
+                    <div class="name-flower">
+                        <h2>
+                            Rosa
+                        </h2>
+                    </div>
+
+
+                </div>
+
+                <div class="circuloFlor">
+                    <div class="imgFlor-2">
+                        <a href="orquídia.html"><img src="image/imgFlor2.png" onmouseover="this.src='image/img 2.png'"
+                                onmouseout="this.src='image/imgFlor2.png'" width="245px" class="plan"></a>
+                    </div>
+                    <div class="name-flower2">
+                        <h2>
+                            Orquídea
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="circuloFlor">
+                    <div class="imgFlor-3">
+
+                        <a href="produtotres.html"><img src="image/imgFlor3.png" onmouseover="this.src='image/image50.jpg'"
+                                onmouseout="this.src='image/imgFlor3.png'" width="245px" class="plan"></a>
+                    </div>
+                    <div class="name-flower3">
+                        <h2>
+                            Crisântemo
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="circuloFlor">
+                    <div class="imgFlor-4">
+
+                        <a href="produtoquatro.html"><img src="image/imgFlor4.png" onmouseover="this.src='image/image 91.jpg'"
+                                onmouseout="this.src='image/imgFlor4.png'" width="245px" class="plan"></a>
+                    </div>
+                    <div class="name-flower4">
+                        <h2>
+                            Lírio da paz
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="lancamentos">
+            <br><br>
+            <h1 class="title2">
+                Lançamentos
+            </h1>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img class="imgs" src="image/image 49.png" onmouseover="this.src='image/image 33.png'"
+                    onmouseout="this.src='image/image 49.png'" width="205px">
+                <h4 class="titulo">
+                    Singônio
+                </h4>
+                <p class="preco">
+                    R$53,00
+                </p>
+                <a href="produtocinco.html" class="botao">+ i n f o s</a>
+            </div>
+            <div class="content">
+                <img class="flor-roxa1" src="image/flor roxa.png" alt="" width="100px">
+                <img class="flor-roxa01" src="image/flor roxa contrario.png" alt="" width="100px">
+            </div>
+            <div class="card">
+                <img class="imgs" src="image/image 28.png" onmouseover="this.src='image/image 29.jpg'"
+                    onmouseout="this.src='image/image 28.png'" width="205px">
+                <h4 class="titulo">
+                    Costela de Adão
+                </h4>
+                <p class="preco">
+                    R$57,00
+                </p>
+                <a href="produtosete.html" class="botao">+ i n f o s</a>
+            </div>
+            <div class="content">
+                <img class="flor-roxa2" src="image/flor roxa.png" alt="" width="100px">
+                <img class="flor-roxa02" src="image/flor roxa contrario.png" alt="" width="100px">
+            </div>
+            <div class="card">
+                <img class="imgs" src="image/image 62.png" onmouseover="this.src='image/image 64.png'"
+                    onmouseout="this.src='image/image 62.png'" width="205px">
+                <h4 class="titulo">
+                    Jiboia
+                </h4>
+                <p class="preco">
+                    R$40,00
+                </p>
+                <a href="produtooito.html" class="botao">+ i n f o s</a>
+            </div>
+            <div class="content">
+                <img class="flor-roxa3" src="image/flor roxa.png" alt="" width="100px">
+                <img class="flor-roxa03" src="image/flor roxa contrario.png" alt="" width="205px">
+            </div>
+        </div>
+
+        <div>
+            <h1 class="title3">
+                Acessórios
+            </h1>
+        </div>
+        <div class="ver-mais">
+            <a class="botao-mais" href="Acessorios.html">Ver mais</a>
+        </div>
+        <div class="acessorios">
+
+            <a href="acessoriosum.html">
+                <div class="acessorio">
+                    <img src="image/Rectangle 14.png" onmouseover="this.src='image/image 18.png'"
+                        onmouseout="this.src='image/Rectangle 14.png'" class="acc">
+                    <img src="image/flor-lateral.png" alt="" width="30px" class="lateral-1">
+                    <img src="image/flor-lateral.png" alt="" width="30px" class="lateral-01">
+                </div>
+
+            </a>
+
+            <a href="acessoriosdois.html">
+                <div class="acessorio">
+                    <img src="image/Rectangle 15.png" onmouseover="this.src='image/image 92.png'"
+                        onmouseout="this.src='image/Rectangle 15.png'" class="acc">
+                    <img src="image/flor-lateral.png" alt="" width="30px" class="lateral-2">
+                    <img src="image/flor-lateral.png" alt="" width="30px" class="lateral-02">
+                </div>
+            </a>
+            <a href="acessoriostres.html">
+                <div class="acessorio">
+                    <img src="image/Rectangle 16.png" onmouseover="this.src='image/Suporte-de-metal.png'"
+                        onmouseout="this.src='image/Rectangle 16.png'" class="acc">
+                    <img src="image/flor-lateral.png" alt="" width="30px" class="lateral-3">
+                    <img src="image/flor-lateral.png" alt="" width="30px" class="lateral-03">
+                </div>
+            </a>
+            <a href="acessoriosquatro.html">
+                <div class="acessorio">
+                    <img src="image/Rectangle 17.png" onmouseover="this.src='image/suportezin.png'"
+                        onmouseout="this.src='image/Rectangle 17.png'" class="acc">
+                    <img src="image/flor-lateral.png" alt="" width="30px" class="lateral-4">
+                    <img src="image/flor-lateral.png" alt="" width="30px" class="lateral-04">
+                </div>
+            </a>
+        </div>
+        <div class="botoes-frete">
+            <a class="bot1" href="acessoriosum.html">50% OFF</a>
+            <a class="bot2" href="acessoriosdois.html">Frete grátis</a>
+            <a class="bot3" href="acessoriostres.html">50% OFF</a>
+            <a class="bot4" href="acessoriosquatro.html">Frete grátis</a>
+        </div>
+    </main>
+
+    <footer>
+        
+        <div class="branca"></div>
+        <div class="branco"></div>
+        <img class="florroxinha" src="image/flor roxa contrario.png" alt="">
+        <img class="local" src="image/localizacao.png" alt="">
+        <div class="roxao">
+            <div class="empurrar">
+                <a class="Plantas" href="Plantas.html">Plantas</a>
+                <div class="linhaum"></div>
+                <a class="Acessorios" href="Acessorios.html">Acessórios</a>
+                <div class="linhadois"></div>
+                <a class="Lancamentos" href="aguavivaum.html">Lançamentos</a>
+                <div class="linhatres"></div>
+                
+                <div class="linhaquatro"></div>
+                <a class="Favoritos" href="#">Favoritos</a>
+                <div class="linhacinco"></div>
+                <a class="Carrinho" href="#">Carrinho</a>
+                
+            </div>
+            <a class="Login" href="login.html">Login</a>
+            <div class="linhaseis"></div>
+            <a class="Suporte" href="suporte (1).html">Suporte</a>
+            <div class="linhasete"></div>
+            <a class="Sobre" href="sobreNos.html">Sobre nós</a>
+        </div>
+        <p class="appp">Siga-nos!</p>
+        <p class="app">Siga-nos</p>
+        <a href="https://pt-br.facebook.com/people/%C3%81gua-Viva-Flores-e-Decora%C3%A7%C3%B5es/100057605292210/"><img
+                src="image/facebook.png" alt="icone facebook" class="face"></a>
+                <a href="https://instagram.com/aguavivafloress">
+                    <img class="insta" src="image/instagram.png" alt="icone instagram">
+                </a>
+                <p class="endereco">Endereço:Rua Santos Dumont, Avenida Santos Dumont, 680, Ferraz de Vasconcelos - SP,
+                    08530-000</p>
+     
+    </footer>
+
+    <script src="aguaviva.js"></script>
+</body>
+
+</html>

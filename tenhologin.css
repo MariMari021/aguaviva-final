@@ -1,0 +1,84 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: 'anticc';
+    src: url(AnticDidone-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'inter-regular';
+    src: url(static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'inter-semibold';
+    src: url(static/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'inter-light' ;
+    src: url(static/Inter-Light.ttf);
+}
+
+@font-face{
+    font-family: 'deca-regular';
+    src: url(static/LexendDeca-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'deca-light';
+    src: url(static/LexendDeca-Light.ttf);
+}
+
+@font-face {
+    font-family: 'antic';
+    src: url(DarkerGrotesque-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'darker';
+    src: url(DarkerGrotesque-Light.ttf);
+}
+
+@font-face {
+    font-family: 'darker-medium';
+    src: url(DarkerGrotesque-Medium.ttf);
+}
+
+
+
+
+
+.tenhoum{
+    position: absolute;
+    margin-left: -53px;
+    margin-top: -16px;
+    font-family: 'antic';
+    font-size: 22px;
+    color: #7878cf;
+    text-decoration: none;
+}
+
+.tenho {
+    position: absolute;
+    margin-left: -111px;
+    margin-top: 50px;
+ 
+   
+}
+
+.tenhodois{
+    position: absolute;
+    margin-left: -53px;
+    margin-top: 2px;
+    font-family: 'antic';
+    font-size: 22px;
+    color: #7878cf;
+    text-decoration: none;
+}
