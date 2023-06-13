@@ -1208,10 +1208,42 @@ a {
     width: 10px;
 }
 
+
+
+.suporte {
+    position: fixed;
+    z-index: 999;
+    width: 67px;
+    height: 180px;
+    left: 1451px;
+    top: 435px;
+    background: #A3A3F8;
+    border-radius: 5px;
+}
+
+.suporte-nome {
+    position: absolute;
+    width: 121px;
+    height: 45px;
+    right: 1px;
+    left: -17px;
+    top: 74px;
+    font-family: 'darker-medium';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38.5714px;
+    line-height: 52px;
+    color: #fff;
+    transform: rotate(90deg);
+}
+
 /* responsive */
 
 @media screen and (max-width:400px) {
 
+    .suporte, .suporte-nome{
+        display: none;
+    }
     /* cabeçalho */
     nav .main-nav ul li a {
         display: none;
